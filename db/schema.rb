@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(version: 20150414044211) do
   end
 
   create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "city"
+    t.text     "about"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
