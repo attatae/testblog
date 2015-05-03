@@ -14,11 +14,23 @@
 ActiveRecord::Schema.define(version: 20150414044211) do
 
   create_table "projects", force: true do |t|
+    t.string   "headline"
+    t.string   "city"
+    t.string   "email"
+    t.text     "about"
+    t.string   "skills"
+    t.string   "sectors"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "startups", force: true do |t|
+    t.string   "headline"
+    t.string   "city"
+    t.string   "email"
+    t.text     "about"
+    t.string   "skills"
+    t.string   "sectors"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -26,7 +38,10 @@ ActiveRecord::Schema.define(version: 20150414044211) do
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "city"
+    t.string   "email"
     t.text     "about"
+    t.string   "skills"
+    t.string   "interests"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

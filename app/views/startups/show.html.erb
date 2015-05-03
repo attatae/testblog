@@ -1,4 +1,23 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @startup.headline %></h1>
+<hr>
 
-<%= link_to 'Edit', edit_startup_path(@startup) %> |
-<%= link_to 'Back', startups_path %>
+<p><%= @startup.city %></p>
+
+<div class="col-lg-8">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+	    <strong>About</strong>
+	  </div>
+	  <div class="panel-body">
+	    <%= @startup.about %>
+	  </div>
+	</div>
+</div>
+
+<p>
+	<%= link_to 'Edit', edit_startup_path(@startup) %> |
+  <%= link_to 'All Startups', startups_path %>
+</p>
+
+</div>
+
